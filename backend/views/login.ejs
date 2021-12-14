@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="/login-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="text">
+                <h1>Login</h1>
+                <p>No Account? <a href="/">Sign up</a></p>
+            </div>
+            <div class="box">
+                <form class="form" action="http://localhost:4000/api/v1/auth/login" method="GET">
+                    <input type="emailId" class="emailId" placeholder="email id" id= "emailId" name="emailId" required >
+                    <input type="password" class="password" placeholder="password" name="password" required>
+                    <input type="submit"  class="button" value="Login">
+                </form>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            if (window.location.href.indexOf("emailId") > -1) {
+              alert("Invalid Email id/Password");
+            }
+          });
+        </script>
+    </main>
+</body>
+</html>
