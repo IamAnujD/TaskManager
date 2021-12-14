@@ -1,4 +1,4 @@
-##### Task Manager App #####
+## Task Manager App
 
 Tech Stack- Node.js/Express.js/HTML/CSS/EJS/MongoDB/Mongoose
 
@@ -13,8 +13,6 @@ Send emails for the tasks which have deadline as current date( currently the rem
 ### How to run the app-
 
 Make sure you have node installed or download it from here- https://nodejs.org/en/download/
-
-Clone the project
 
 npm install nvm
 nvm install 12.18.0
